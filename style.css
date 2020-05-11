@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Jost);
+*
+{
+	margin: 0;
+	padding : 0;
+	font-family: 'Jost', sans-serif;
+}
+body
+{
+	background: #000 url(https://wallpaperplay.com/walls/full/e/0/a/54074.jpg);
+	background-attachment: fixed;
+	background-blend-mode: hard-light;
+}
+
+.container
+{
+	position: absolute;
+	color: #ffff;
+	top : 50px;
+	left: 100px;
+	right: 100px;
+	bottom: 50px;
+	background: url(https://wallpaperplay.com/walls/full/e/0/a/54074.jpg);
+	opacity: 0.9;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0 50px 50px rgba(0,0,0,0,5), 
+				0 0 0 100px rgba(0,0,0,.1);
+}
+.container h2
+{
+	text-align: center;
+	font-size: 4em;
+	line-height: 0,7em;
+	color: #c0c0c0;
+	margin-top: -80px;
+}
+.container h3
+{
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 0.2em;
+	color: #c0c0c0;
+	margin-top: 10px;
+}
+.counting
+{
+	display: flex;
+	margin-top: 30px;
+}
+.counting div
+{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	background: #c0c0c0;
+	color: #fff;
+	margin: 5px;
+	font-size: 3em;
+	font-weight: 500;
+}
+.counting div:before
+{
+	content: '';
+	position: absolute;
+	bottom: -30px;
+	left: 0;
+	width: 100px;
+	height: 35px;
+	background: #ffff;
+	color: #333;
+	font-size: 0.3em;
+	line-height: 35px;
+	font-weight: 300;
+}
+.counting #hari:before
+{
+	content: "Days";
+}
+.counting #jam:before
+{
+	content: "Hours";
+}
+.counting #menit:before
+{
+	content: "Minutes";
+}
+.counting #detik:before
+{
+	content: "Seconds";
+}
+.container2 h4
+{
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 0,7em;
+	color: #c0c0c0;
+	margin-top: 40px;
+}

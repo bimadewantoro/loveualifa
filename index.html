@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Our Days</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<h2>🌻counting our lovely days🌻</h2>
+			<h3>Bima ❤ Alifa</h3>
+			<div class="counting">
+				<div id="hari"></div>
+				<div id="jam"></div>
+				<div id="menit"></div>
+				<div id="detik"></div>
+		</div>
+		<script type="text/javascript">
+			var jadian = new Date('October 21, 2018 00:00:01').getTime();
+
+			var x = setInterval(function() {
+			var now = new Date().getTime();
+			var hitungan = now - jadian;
+			var secondsInADay = 60 * 60 * 1000 * 24;
+      		var secondsInAHour = 60 * 60 * 1000;
+
+			var days = Math.floor(hitungan / (secondsInADay) * 1);
+  			var hours = Math.floor((hitungan % (secondsInADay)) / (secondsInAHour) * 1);
+  			var mins = Math.floor(((hitungan % (secondsInADay)) % (secondsInAHour)) / (60 * 1000) * 1);
+  			var secs = Math.floor((((hitungan % (secondsInADay)) % (secondsInAHour)) % (60 * 1000)) / 1000 * 1);
+
+			document.getElementById('hari').innerText=days;
+			document.getElementById('jam').innerText=hours;
+			document.getElementById('menit').innerText=mins;
+			document.getElementById('detik').innerText=secs;
+			}, 1000);
+		</script>
+		<div class="container2">
+			<h4>until forever</h4>
+		</div>
+	</body>
+</html>
